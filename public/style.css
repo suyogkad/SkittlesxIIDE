@@ -5,9 +5,14 @@
     text-decoration: none;
     scrollbar-color: transparent transparent;
   }
+
+  /* body{
+    background-image: url("./bg.png");
+    background-repeat: repeat;
+  } */
     
   main {
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 
   .logo-section {
@@ -35,7 +40,7 @@
 }
 
 .pride-text {
-font-size: 8rem;
+font-size: 4rem;
 font-weight: 800;
 font-family: 'Montserrat', sans-serif;
 background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
