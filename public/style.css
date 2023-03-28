@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scrollbar-color: transparent transparent;
   }
     
   main {
@@ -75,8 +76,33 @@ animation: rainbow 10s ease-in-out infinite;
   
   .highlight {
     color: #1e90ff;
+    cursor: pointer;
+  }
+
+  .highlight:hover {
+    text-decoration: underline;
   }
   
+  .highlight:active {
+    color: #1e90ff;
+  }
+  
+  .highlight a:hover {
+    color: inherit;
+  }
+  
+  .highlight a:active {
+    color: inherit;
+  }
+  
+  .highlight a:visited {
+    color: #1e90ff;
+  }
+
+  a:visited {
+    color: #1e90ff;
+  }
+
   .hero {
     display: flex;
     flex-direction: column;
@@ -130,6 +156,7 @@ header {
   display: inline;
   align-items: center;
   text-decoration: none;
+  margin-right: 15px;
 }
 
 .social-icons a {
@@ -183,6 +210,21 @@ header {
   background: linear-gradient(red, orange, yellow, green, blue, violet);
   background-clip: text;
   color: transparent;
+}
+
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+/* Webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
 }
 
 /* Media query for devices with screen width less than or equal to 576px (e.g. smartphones) */
