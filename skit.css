@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+    
+  main {
+    padding: 2rem;
+  }
+
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+.pride {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.pride-text {
+font-size: 8rem;
+font-weight: 800;
+font-family: 'Montserrat', sans-serif;
+background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
+background-size: 200% auto;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+animation: rainbow 10s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+0% {
+  background-position: 0 0;
+}
+50% {
+  background-position: 100% 0;
+}
+100% {
+  background-position: 0 0;
+}
+}
+
+  .join-movement {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .join-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #1e90ff;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #FF3838, #FFA300, #FFD54F, #5EBD3E, #8E24AA);
+    padding: 4rem;
+    color: #FFF;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    background-color: #FFF;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #FFF;
+  }
+  
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  float: right;
+}
+
+.social-icons {
+  display: inline;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.fa-facebook{
+  color: #4267B2;
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-instagram {
+  color: #E4405F;
+}
+
+.fa-envelope {
+  color: #B19CD9;
+}
+
+.social-icons a i {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+}
+
+.fa-facebook:hover{
+  background: linear-gradient(red, orange, yellow, green, blue, violet);
+  background-clip: text;
+  color: transparent;
+}
+
+.fa-envelope:hover{
+  background: linear-gradient(red, orange, yellow, green, blue, violet);
+  background-clip: text;
+  color: transparent;
+}
+
+.fa-twitter:hover{
+  background: linear-gradient(red, orange, yellow, green, blue, violet);
+  background-clip: text;
+  color: transparent;
+}
+
+.fa-instagram:hover{
+  background: linear-gradient(red, orange, yellow, green, blue, violet);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Media query for devices with screen width less than or equal to 576px (e.g. smartphones) */
+@media (max-width: 576px) {
+  /* CSS code for header */
+  .header {
+    padding: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+  
+  .social-icons a i {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* CSS code for hero section */
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-text {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  /* CSS code for pride section */
+  .pride {
+    padding: 2rem 1rem;
+  }
+  
+  .pride-text {
+    font-size: 6rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 10s ease-in-out infinite;
+    }
+    
+    @keyframes rainbow {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+    }
+  
+  /* CSS code for join the movement section */
+  .join-movement {
+    padding: 2rem 1rem;
+  }
+  
+  .join-movement-text {
+    font-size: 1.2rem;
+  }
+  
+  .join-movement-text span {
+    color: #1A237E;
+  }
+}
+
+/* Media query for devices with screen width between 577px and 992px (e.g. tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  /* CSS code for header */
+  .header {
+    padding: 1.5rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  
+  .social-icons a i {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* CSS code for hero section */
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+  
+  .hero-text {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  
+  /* CSS code for pride section */
+  .pride {
+    padding: 3rem 1.5rem;
+  }
+  
+  .pride-text {
+    font-size: 6rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 10s ease-in-out infinite;
+    }
+    
+    @keyframes rainbow {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+    }
+  
+  /* CSS code for join the movement section */
+  .join-movement {
+    padding: 3rem 1.5rem;
+  }
+  
+  .join-movement-text {
+    font-size: 1.5rem;
+  }
+  
+  .join-movement-text span {
+    color: #1A237E;
+  }
+}
+
